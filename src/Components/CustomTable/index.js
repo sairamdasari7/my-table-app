@@ -1,4 +1,3 @@
-// CustomTable.js
 import React, { useState } from 'react';
 import {
   Table,
@@ -19,7 +18,7 @@ import { MdSearch } from 'react-icons/md';
 const CustomTable = ({ columns, data }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [sortedColumn, setSortedColumn] = useState(null);
-  const [sortOrder, setSortOrder] = useState('asc'); // Set default to 'asc'
+  const [sortOrder, setSortOrder] = useState('asc');
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
 
